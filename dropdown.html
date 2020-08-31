@@ -1,0 +1,79 @@
+<!DOCTYPE htl>
+
+<htl>
+
+    <head>
+        <meta charset="utf-8">
+        <title> CSS Dropdown</title>
+
+    </head>
+
+    <body>
+        <style>
+            .row {
+                padding-block: 10px;
+                background-color: rgb(95, 95, 187);
+                position: relative;
+            }
+
+            .content {
+                display: none;
+                padding-block: 5px;
+                padding-right: 5px;
+                padding-left: 5px;
+                position: absolute;
+                background-color: rgb(231, 205, 255);
+                box-shadow: rgb(95, 95, 187);
+            }
+
+            .content a {
+                display: block;
+            }
+
+            .col {
+                display: inline;
+                padding: 15px;
+            }
+
+            .col:hover .content {
+                display: block;
+                position: absolute;
+            }
+
+            .menu:hover {
+                background-color: rgb(231, 205, 255);
+            }
+        </style>
+
+        <div class="row">
+            <!-- Dropdown 1 -->
+            <div class="col">
+                <span class="menu">Menu 1</span>
+                <div class="content">
+                    <a href=""> Item 1</a>
+                    <a href=""> Item 2</a>
+                    <a href=""> Item 3</a>
+                </div>
+            </div>
+            <!-- Dropdown 1 -->
+            <div class="col">
+                <span class="menu">Menu 2</span>
+                <div class="content">
+                    <a href=""> Item 5</a>
+                    <a href=""> Item 6</a>
+                    <a href=""> Item 7</a>
+                </div>
+            </div>
+            <!-- Dropdown 1 -->
+            <div class="col">
+                <span class="menu">Menu 3</span>
+                <div class="content">
+                    <a href=""> Item 8</a>
+                    <a href=""> Item 9</a>
+                    <a href=""> Item 10</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</htl>
